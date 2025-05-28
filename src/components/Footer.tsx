@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold text-orange-400">Foxx Serviços</h3>
+            <h3 className="text-2xl font-bold text-orange-400">FOXX SERVIÇOS</h3>
             <p className="text-gray-300 leading-relaxed">
               Especialistas em construção civil com mais de 15 anos de experiência. 
               Transformamos seus sonhos em realidade com qualidade e pontualidade.
@@ -76,7 +76,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm">
-              © 2024 Foxx Serviços. Todos os direitos reservados.
+              © 2024 FOXX SERVIÇOS. Todos os direitos reservados.
             </div>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-orange-400 text-sm transition-colors">
