@@ -1,3 +1,4 @@
+
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
@@ -59,11 +60,11 @@ const Footer = () => {
               </div>
               <div>
                 <div className="font-medium">Telefone:</div>
-                <div className="text-sm">(11) 9999-9999</div>
+                <div className="text-sm">(11) 94038-9981</div>
               </div>
               <div>
                 <div className="font-medium">Email:</div>
-                <div className="text-sm">contato@construtorpro.com.br</div>
+                <div className="text-sm">contato@foxxservicos.com.br</div>
               </div>
               <div>
                 <div className="font-medium">Horário:</div>
@@ -86,7 +87,7 @@ const Footer = () => {
                 Termos de Uso
               </a>
               <a href="#" className="text-gray-400 hover:text-orange-400 text-sm transition-colors">
-                CNPJ: 12.345.678/0001-90
+                CNPJ: 03.039.939/0001-58
               </a>
             </div>
           </div>

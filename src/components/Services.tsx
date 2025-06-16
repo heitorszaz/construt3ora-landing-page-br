@@ -1,5 +1,5 @@
 
-import { Building, Hammer, Wrench, Home, PlusCircle, CheckCircle } from 'lucide-react';
+import { Building, Hammer, Wrench, Home, PlusCircle } from 'lucide-react';
 
 const Services = () => {
   const services = [
@@ -22,11 +22,6 @@ const Services = () => {
       icon: <PlusCircle className="w-12 h-12 text-orange-600" />,
       title: "Ampliações",
       description: "Expansão de espaços residenciais e comerciais com estrutura segura."
-    },
-    {
-      icon: <CheckCircle className="w-12 h-12 text-orange-600" />,
-      title: "Produção da Sicred",
-      description: "Serviços especializados em produção da Sicred com qualidade e eficiência."
     },
     {
       icon: <Wrench className="w-12 h-12 text-orange-600" />,
