@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -6,6 +7,14 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMenuOpen(false); // Close mobile menu after navigation
   };
 
   return (
@@ -21,19 +30,19 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <a href="#inicio" className="text-gray-700 hover:text-orange-600 px-3 py-2 text-sm font-medium transition-colors">
+              <button onClick={() => scrollToSection('inicio')} className="text-gray-700 hover:text-orange-600 px-3 py-2 text-sm font-medium transition-colors">
                 Início
-              </a>
-              <a href="#servicos" className="text-gray-700 hover:text-orange-600 px-3 py-2 text-sm font-medium transition-colors">
+              </button>
+              <button onClick={() => scrollToSection('servicos')} className="text-gray-700 hover:text-orange-600 px-3 py-2 text-sm font-medium transition-colors">
                 Serviços
-              </a>
-              <a href="#projetos" className="text-gray-700 hover:text-orange-600 px-3 py-2 text-sm font-medium transition-colors">
+              </button>
+              <button onClick={() => scrollToSection('projetos')} className="text-gray-700 hover:text-orange-600 px-3 py-2 text-sm font-medium transition-colors">
                 Projetos
-              </a>
-              <a href="#contato" className="text-gray-700 hover:text-orange-600 px-3 py-2 text-sm font-medium transition-colors">
+              </button>
+              <button onClick={() => scrollToSection('contato')} className="text-gray-700 hover:text-orange-600 px-3 py-2 text-sm font-medium transition-colors">
                 Contato
-              </a>
-              <button className="bg-orange-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-orange-700 transition-colors">
+              </button>
+              <button onClick={() => scrollToSection('contato')} className="bg-orange-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-orange-700 transition-colors">
                 Orçamento
               </button>
             </div>
@@ -54,19 +63,19 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-              <a href="#inicio" className="text-gray-700 hover:text-orange-600 block px-3 py-2 text-base font-medium">
+              <button onClick={() => scrollToSection('inicio')} className="text-gray-700 hover:text-orange-600 block px-3 py-2 text-base font-medium w-full text-left">
                 Início
-              </a>
-              <a href="#servicos" className="text-gray-700 hover:text-orange-600 block px-3 py-2 text-base font-medium">
+              </button>
+              <button onClick={() => scrollToSection('servicos')} className="text-gray-700 hover:text-orange-600 block px-3 py-2 text-base font-medium w-full text-left">
                 Serviços
-              </a>
-              <a href="#projetos" className="text-gray-700 hover:text-orange-600 block px-3 py-2 text-base font-medium">
+              </button>
+              <button onClick={() => scrollToSection('projetos')} className="text-gray-700 hover:text-orange-600 block px-3 py-2 text-base font-medium w-full text-left">
                 Projetos
-              </a>
-              <a href="#contato" className="text-gray-700 hover:text-orange-600 block px-3 py-2 text-base font-medium">
+              </button>
+              <button onClick={() => scrollToSection('contato')} className="text-gray-700 hover:text-orange-600 block px-3 py-2 text-base font-medium w-full text-left">
                 Contato
-              </a>
-              <button className="w-full text-left bg-orange-600 text-white px-3 py-2 text-base font-medium hover:bg-orange-700 transition-colors">
+              </button>
+              <button onClick={() => scrollToSection('contato')} className="w-full text-left bg-orange-600 text-white px-3 py-2 text-base font-medium hover:bg-orange-700 transition-colors">
                 Orçamento
               </button>
             </div>

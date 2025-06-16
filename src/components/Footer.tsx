@@ -56,7 +56,7 @@ const Footer = () => {
             <div className="space-y-3 text-gray-300">
               <div>
                 <div className="font-medium">Endereço:</div>
-                <div className="text-sm">Rua das Construções, 123<br />São Paulo - SP, 01234-567</div>
+                <div className="text-sm">Rua da Moenda, 430<br />São Paulo - SP</div>
               </div>
               <div>
                 <div className="font-medium">Telefone:</div>

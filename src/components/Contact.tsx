@@ -66,7 +66,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Endereço</h4>
-                    <p className="text-gray-600">Rua das Construções, 123<br />São Paulo - SP, 01234-567</p>
+                    <p className="text-gray-600">Rua da Moenda, 430<br />São Paulo - SP</p>
                   </div>
                 </div>
 

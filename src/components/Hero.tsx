@@ -1,5 +1,12 @@
 
 const Hero = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="inicio" className="pt-16 bg-gradient-to-br from-gray-900 via-gray-800 to-orange-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -17,17 +24,23 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-orange-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-orange-700 transition-all transform hover:scale-105 shadow-lg">
+              <button 
+                onClick={() => scrollToSection('contato')}
+                className="bg-orange-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-orange-700 transition-all transform hover:scale-105 shadow-lg"
+              >
                 Solicitar Orçamento
               </button>
-              <button className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-gray-900 transition-all">
+              <button 
+                onClick={() => scrollToSection('projetos')}
+                className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-gray-900 transition-all"
+              >
                 Ver Projetos
               </button>
             </div>
 
             <div className="grid grid-cols-3 gap-8 pt-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-400">500+</div>
+                <div className="text-3xl font-bold text-orange-400">50+</div>
                 <div className="text-sm text-gray-300">Projetos Concluídos</div>
               </div>
               <div className="text-center">
