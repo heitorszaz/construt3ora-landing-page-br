@@ -1,3 +1,4 @@
+
 import { CheckCircle, Award, Target, Briefcase } from 'lucide-react';
 
 const Projects = () => {
@@ -25,29 +26,6 @@ const Projects = () => {
       title: "Projetos Industriais",
       description: "Instalações industriais robustas e eficientes para produção.",
       category: "Industrial"
-    }
-  ];
-
-  const quadrasProjects = [
-    {
-      title: "Quadra Poliesportiva - Antes",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      description: "Estado inicial da quadra antes da reforma"
-    },
-    {
-      title: "Quadra Poliesportiva - Depois",
-      image: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      description: "Quadra completamente renovada e modernizada"
-    },
-    {
-      title: "Quadra de Society - Antes",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      description: "Quadra de society em fase de construção"
-    },
-    {
-      title: "Quadra de Society - Depois",
-      image: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      description: "Quadra de society finalizada e pronta para uso"
     }
   ];
 
@@ -94,52 +72,6 @@ const Projects = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Seção de Construção de Quadras */}
-        <div className="mb-16">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-gray-900 mb-4">
-              Construção de Quadras Esportivas
-            </h3>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Veja a transformação completa de nossos projetos de quadras esportivas - antes e depois
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {quadrasProjects.map((project, index) => (
-              <div 
-                key={index}
-                className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
-              >
-                <div className="relative h-48">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute top-4 left-4">
-                    <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-                      project.title.includes('Antes') 
-                        ? 'bg-red-100 text-red-700' 
-                        : 'bg-green-100 text-green-700'
-                    }`}>
-                      {project.title.includes('Antes') ? 'Antes' : 'Depois'}
-                    </span>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h4 className="text-lg font-semibold text-gray-900 mb-2">
-                    {project.title}
-                  </h4>
-                  <p className="text-gray-600 text-sm">
-                    {project.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
 
         <div className="text-center">
